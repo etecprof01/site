@@ -1,0 +1,160 @@
+header {
+    background: #AAAAAA;            /* Cor do plano de fundo do header */
+    padding: 20px 0;                /* Espaçamento interno */
+}
+
+.caixa {
+    position: relative;
+    width: 950px;                    /* configuração padrão para o css */
+    margin: 0 auto;                    /* configuração padrão para o css */
+}
+
+nav {
+    position: absolute;
+    top: 110px;                        /* Posição em relação ao topo */
+    right: 0px;                        /* Posição em relação à direita */
+}
+
+nav li {
+    display: inline;                /* Desbloqueio de 100% do conteúdo na horizontal (algo mais pode ser adicionado ao lado) */
+    margin-left: 15px;                /* Margem externa à esquerda */
+}
+
+nav a {
+    text-transform: uppercase;        /* O texto fica todo em maiúsculo */
+    color: black;                    /* A cor do texto fica em negrito */
+    font-weight: bold;                /* Reforçar a cor do texto */
+    font-size: 22px;                /* Tamanho da fonte (padrão 16) */
+    text-decoration: none;            /* Retirar as configurações padrões de link */
+
+}
+
+nav a:hover {                        /* Comando para mudar a cor do link quando o cursor passar por cima dele */
+    color: #C78C19;
+    text-decoration: underline;        /* Para retornar o sublinhado quando o cursor passar por cima do link */
+    font-size: 23px;                /* Para aumentar o tamanho quando o cursor passar por cima */
+}
+
+.produtos {
+    width: 940px;                    /* configuração padrão para o css */
+    margin: 0 auto;                    /* (Sem expaçamento externo) configuração padrão para o css  */
+    padding: 50px 0;                /* 50px espaçamento interno superior e inferior, 0 laterais */
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;                /* Texto alinhado ao centro */
+    width: 30%;                        /* Tamanho de cada banner */
+    vertical-align: top;
+    margin: 0 1.5%;                    /* Margem vertical e horizontal */
+    padding: 30px 20px;                /* Espaçamento interno vertical e horizontal */
+    box-sizing: border-box;            /* Espaçamento lateral dentro do percentual */
+    border: 4px solid black;        /* Isso é igual a: border-width; border-style; border-color; */
+    border-radius: 20px;            /* Medida de "arredondamento" do quadrado. será a medida em raios que irei adc nas bordas */
+}
+
+.produtos li:hover {                /* Quando o cursor passar por cima */
+    border-color: #C78C19;            /* Cor da borda */
+    color: #C78C19;                    /* Cor do texto */
+}
+
+.produtos li:active {                /* Quando o cursor for clicado */
+    border-color: green;            /* Cor da borda */
+    color: green;                    /* Cor do texto */
+}
+
+/* OBS: Para mudar o estilo de qualquer elemento quando o cursor passar por cima, eu devo especificar o elemento, pois 
+os elementos são específicos, portanto, devem ser aplicadas as alterações dentro de cada nova chave. */ 
+
+.produtos li:hover h2 {                /* Local que eu quero alterar (título) */
+    font-size: 32px;
+}
+
+
+
+	
+.produtos h2 {                        /* Título */
+    font-size: 30px;                /* Tamanho do texto */
+    font-weight: bold;                /* Para adicionar cor mais escura */
+}
+
+.produto-descricao {                /* Texto */
+    font-size: 18px;                /* Tamanho do texto */
+}
+
+.produto-preco {                    /* Preço */
+    font-size: 22px;                /* Tamanho do texto */
+    font-weight: bold;                /* Para adicionar cor mais escura */
+    margin-top: 10px;                /* margem apenas na parte superior */
+}
+
+footer {
+    text-align: center;                /* Texto alinhado ao centro */
+    background: url(bg.jpg);        /* Para adicionar plano de fundo na imagem */
+    padding: 20px 0;
+}
+
+.copyright {                        /* Classe para fazer alteração no texto */
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 20px 0 0;                /* Margem superior, para afastar a imagem do texto */
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    padding: 40px 0;
+}
+
+form label, form legend {                /* REPETINDO AS CONFIGURAÇÕES PARA PARÁGRAFO */
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {            /* TODAS AS CONFIGURAÇÕES SERÃO APLICADAS IGUALMENTE */
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    width: 40%;
+}
+
+.checkbox {                /* FOI CRIADA UMA CLASSE ESPECÍFICA PARA O PARÁGRAFO "GOSTARIA DE RECEBER..." */
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 30%;
+    padding: 5px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;                /* Texto em negrito */
+    font-size: 15px;
+    border: solid 2px black;
+    border-radius: 4px;                /* Canto arredondado */
+}
+
+.enviar:hover {                        /* 'flutuar'// toda vez que o cursor passar por cima do botão */
+    background: darkorange;
+    cursor: pointer;                /* Tipo de cursor */
+    transform: scale(1.1);            /* Aumentará proporcionalmente o tamanho de todos os elementos 
+                                    sem que eu precise alterar qualquer valor */
+    transition: 2s all;                /* all/ tudo ---- Tempo em que leva a alteração */
+}
+
+table {
+    margin-bottom: 40px;
+}
+
+td, th {
+    border: 2px black solid;
+    padding: 6px 14px;
+}
+
+thead {
+    font-weight: bold;
+    background: #777777;
+}
